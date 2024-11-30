@@ -40,7 +40,7 @@ html,
   clear: both;
 }
 .taskbar .icon {
-  position: relative;
+  position: bottom center;
   display: inline-block;
   height: 50px;
   width: 50px;
