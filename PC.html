@@ -9,37 +9,21 @@
 <!-- Want to add in other taskbar functions - working volume etc. And also a restart / start / shutdown animation when I can find the time.-->
 <!-- #Start menu scroll bar not as nice in Firefox / IE - use chrome where possible-->
 <!---->
-<link href="style.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" />
-<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-<div class="desktop">
-  <container>
-    <img src="https://static.vecteezy.com/system/resources/previews/022/484/495/non_2x/google-chrome-icon-logo-symbol-free-png.png" style="width:75px; height:75px;">
-      <img src="https://i1.wp.com/download.zone/wp-content/uploads/2020/07/Files-By-Google-Clean-Up-Space-For-Android.png?w=500&ssl=1" style="width:75px; height:75px;">
-      <img src="https://icon-library.com/images/android-settings-icon-png/android-settings-icon-png-21.jpg" style="width:75px; height:75px;">
-      <img src="" style="width:50px; height:50px;">
-      <img src="" style="width:50px; height:50px;">
-      <img src="" style="width:50px; height:50px;">
-      <img src="" style="width:50px; height:50px;">
-</container>
-</div>
+<div class="desktop"></div>
 <div class="taskbar">
   <div class="programs">
-    <div class="icon win" data-target=".startmenu, .icon.win"><i class="fa fa-android"></i></div>
-    <div class="icon google" title="Say hey Google" data-target="#cortana"><i class="fa fa-google"></i></div>
+    <div class="icon win" data-target=".startmenu, .icon.win"><i class="fa fa-windows"></i></div>
+    <div class="icon cortana" title="Ask me anything" data-target="#cortana"><i class="fa fa-circle-o"></i></div>
     <div class="icon application minimized edge" data-target=".id-edge">
       <div class="app-preview preview-edge">
         <div class="content"></div>
-      </div><i class="fa fa-chrome"></i>
+      </div><i class="fa fa-edge"></i>
     </div>
     <div class="icon application skype" data-target="#skype"><i class="fa fa-skype"></i></div>
   </div>
-</div>
   <div class="tray">
     <div class="ico more-icons">
-      <div class="all-icons"><i class="fa fa-bluetooth" title="Bluetooth Devices"></i><i class="fa fa-cloud" title="OneDrive up to date"></i><i class="fa fa-envelope" title="You have new unread e-mail messages"></i><i class="fa fa-flag" title="Android Defender requires attention"></i><i class="fa fa-wifi" title="Keyboard En-NZ"></i><i class="fa fa-shield" title="Your computer is protected"></i><i class="fa fa-wifi" title="Internet Access"></i><i class="fa fa-dropbox" title="Dropbox Synced"></i></div>
+      <div class="all-icons"><i class="fa fa-bluetooth" title="Bluetooth Devices"></i><i class="fa fa-cloud" title="OneDrive up to date"></i><i class="fa fa-envelope" title="You have new unread e-mail messages"></i><i class="fa fa-flag" title="Windows Defender requires attention"></i><i class="fa fa-keyboard-o" title="Keyboard En-NZ"></i><i class="fa fa-shield" title="Your computer is protected"></i><i class="fa fa-wifi" title="Internet Access"></i><i class="fa fa-dropbox" title="Dropbox Synced"></i></div>
       <div class="fa fa-chevron-up" title="Show hidden icons"></div>
     </div>
     <div class="ico" title="Speakers: 80%"><i class="fa fa-volume-up"></i></div>
@@ -55,10 +39,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col icons">
-          <div class="icon top bars" title="Expand"><i class="fa fa-bars"></i><span class="start"></span></div>
+          <div class="icon top bars" title="Expand"><i class="fa fa-bars"></i><span class="start">start</span></div>
           <div class="bottom">
-            <div class="icon profile" title="Amanda Ashley"><a href="http://android.com" target="_blank"><img class="img-responsive" src="http://rodneyrainbow.co.nz/media/UserAvatars/9a594d7d957f920777cfb383177a82f4ea065504.png?width=60&amp;height=60&amp;mode=crop"/></a><span>Andrew Ashley</span></div>
-            <div class="icon file-explorer" title="File Explorer"><i class="fa fa-folder"></i><span>Files</span></div>
+            <div class="icon profile" title="Amanda Ashley"><a href="http://creativecollective.studio/" target="_blank"><img class="img-responsive" src="http://rodneyrainbow.co.nz/media/UserAvatars/9a594d7d957f920777cfb383177a82f4ea065504.png?width=60&amp;height=60&amp;mode=crop"/></a><span>Andrew Ashley</span></div>
+            <div class="icon file-explorer" title="File Explorer"><i class="fa fa-folder"></i><span>File Explorer</span></div>
             <div class="icon settings" title="Settings"><i class="fa fa-cog"></i><span>Settings</span></div>
             <div class="icon power" title="Power"><i class="fa fa-power-off"></i><span>Power</span></div>
           </div>
@@ -66,7 +50,7 @@
         <div class="col-xs-4 col-xs-offset-2 programs">
           <p class="title">Recently added</p>
           <div class="item"><i class="fa fa-skype"></i><span>Skype</span></div>
-          <div class="item"><i class="fa fa-file-google"></i><span>Google</span></div>
+          <div class="item"><i class="fa fa-file-excel-o"></i><span>Excel</span></div>
           <p class="title">Most used</p>
           <div class="item"><i class="fa fa-chrome"></i><span>Google Chrome</span></div>
           <div class="item"><i class="fa fa-firefox"></i><span>Mozilla Firefox</span></div>
@@ -74,7 +58,7 @@
         <div class="col-xs-6 tiles">
           <p class="title">Life at a glance
             <div class="tile wide"><i class="fa fa-calendar"></i><span>Calendar</span></div>
-            <div class="tile medium"><i class="fa fa-cog"></i><span>Settings</span></div>
+            <div class="tile medium"><i class="fa fa-file-pdf-o"></i><span>Adobe Acrobat</span></div>
             <div class="tile medium photos"><span>Photos<i class="fa fa-picture-o"></i></span></div>
             <div class="tile medium twitter"><span>Twitter<i class="fa fa-twitter"></i></span></div>
             <div class="tile medium"><i class="fa fa-envelope"></i><span>Mail</span></div>
@@ -88,59 +72,11 @@
   </div>
 </div>
 <div class="id-edge app minimized">
-  <div class="toolbar draggable" class="full screen">
-    <div class="full screen" + class="tab"><i class="fa fa-list-alt"> </i><span>Start</span><i class="fa fa-times"></i></div>
+  <div class="toolbar draggable">
+    <div class="tab"><i class="fa fa-list-alt"> </i><span>Start</span><i class="fa fa-times"></i></div>
   </div>
   <div class="addressbar draggable"><i class="fa fa-arrow-left"></i><i class="fa fa-arrow-right"></i><i class="fa fa-refresh"></i><span class="divider"></span>
-    <input class="edge-url" value="https://google.com"/>
+    <input class="edge-url" value="creativecollective.studio/"/>
   </div>
-  <iframe class="edge-browser" src="https://www.google.com/search?igu=1" frameborder="0" width="100%" height="100%"></iframe>
+  <iframe class="edge-browser" src="http://creativecollective.studio/" frameborder="0" width="100%" height="100%"></iframe>
 </div>
-
-<div class="dockbg"></div>
-<div class="dock">
-    <img src="foo.png">
-    <img src="bar.png">
-</div>
-
-<style>
-  .dockbg {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 35px;
-    background: #bbb;
-}
-
-.dock {
-    position: bottom;
-    text-align: center;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    height: 100px;
-    line-height: 100px;
-    background: url("https://th.bing.com/th/id/R.3b6d40c4573dead4abac75927bc72462?rik=VPt3oW%2fm7%2fhgBw&riu=http%3a%2f%2fnewosxbook.com%2fimages%2fdock.png&ehk=NGC5%2fRY%2fQG1zDU7vJf9cY5KOcVUzve65s6YL7NSwXXI%3d&risl=&pid=ImgRaw&r=0");
-    background-repeat: no-repeat;
-}
-
-.dock img {
-    display: inline-block;
-    vertical-align: bottom;
-    height: 50%;
-    padding: 0 5px;
-    /* + your animation properties */
-}
-
-
-.dock img:hover {
-    height: 100%;
-}
-</style>
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-<script src="script.js"></script>
